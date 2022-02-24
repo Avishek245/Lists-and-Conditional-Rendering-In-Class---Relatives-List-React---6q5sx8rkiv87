@@ -10,15 +10,13 @@ class App extends Component {
   }
   render() {
     return (
-      <div id="main">
-        <ol key="relativeList">
-          {this.state.names &&
-            this.state.names.map((item, index) => {
-              let temp = "relativeListItem" + { index };
-              return <li key={temp}>{item}</li>;
-            })}
-        </ol>
-      </div>
+      <ol key="relativeList">
+        {this.state.names &&
+          this.state.names.map((item, index) => {
+            let temp = "relativeListItem" + { index };
+            return <li key={temp}>{item}</li>;
+          })}
+      </ol>
     );
   }
 }
